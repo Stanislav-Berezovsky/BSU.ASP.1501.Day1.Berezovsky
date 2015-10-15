@@ -37,7 +37,7 @@ namespace Task2
                             switch (choice)
                             {
                                 case 1:
-                                    isTrue = JaggedArray.CompareSumArrays(ref array[i], ref array[i + 1]);
+                                    isTrue = JaggedArray.CompareSumArrays(array[i], array[i + 1]);
                                     if (isPositive)
                                     {
                                         if (isTrue == 1)
@@ -50,7 +50,7 @@ namespace Task2
                                     }
                                     break;
                                 case 2:
-                                    isTrue = JaggedArray.CompareMaxArraysElements(ref array[i], ref array[i + 1]);
+                                    isTrue = JaggedArray.CompareMaxArraysElements(array[i], array[i + 1]);
                                     if (isPositive)
                                     {
                                         if (isTrue == 1)
@@ -63,7 +63,7 @@ namespace Task2
                                     }
                                     break;
                                 case 3:
-                                    isTrue = JaggedArray.CompareMinArraysElements(ref array[i], ref array[i + 1]);
+                                    isTrue = JaggedArray.CompareMinArraysElements(array[i], array[i + 1]);
                                     if (isPositive)
                                     {
                                         if (isTrue == 1)
@@ -87,7 +87,7 @@ namespace Task2
             b = swap;
         }
 
-        private static int CompareSumArrays(ref int[] a, ref int[] b)
+        private static int CompareSumArrays(int[] a, int[] b)
         {
             if (a.Sum() > b.Sum())
                 return 1;
@@ -96,7 +96,7 @@ namespace Task2
             return -1;
         }
 
-        private static int CompareMaxArraysElements(ref int[] a, ref int[] b)
+        private static int CompareMaxArraysElements(int[] a, int[] b)
         {
             if (a.Max() > b.Max())
                 return 1;
@@ -105,7 +105,7 @@ namespace Task2
             return -1;
         }
 
-        private static int CompareMinArraysElements(ref int[] a, ref int[] b)
+        private static int CompareMinArraysElements(int[] a, int[] b)
         {
             if (a.Min() > b.Min())
                 return 1;
