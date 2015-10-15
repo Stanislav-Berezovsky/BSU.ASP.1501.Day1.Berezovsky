@@ -89,6 +89,7 @@ namespace Task2
 
         private static int CompareSumArrays(int[] a, int[] b)
         {
+
             if (a.Sum() > b.Sum())
                 return 1;
             if (a.Sum() == b.Sum())
