@@ -90,27 +90,33 @@ namespace Task2
         private static int CompareSumArrays(int[] a, int[] b)
         {
 
-            if (a.Sum() > b.Sum())
+            int aSum = a.Sum();
+            int bSum = b.Sum();
+            if (aSum > bSum)
                 return 1;
-            if (a.Sum() == b.Sum())
+            if (aSum == bSum)
                 return 0;
             return -1;
         }
 
         private static int CompareMaxArraysElements(int[] a, int[] b)
         {
-            if (a.Max() > b.Max())
+            int aMax = a.Max();
+            int bMax = b.Max();
+            if (aMax > bMax)
                 return 1;
-            if (a.Max() == b.Max())
+            if (aMax == bMax)
                 return 0;
             return -1;
         }
 
         private static int CompareMinArraysElements(int[] a, int[] b)
         {
-            if (a.Min() > b.Min())
+            int aMin = a.Min();
+            int bMin = b.Min();
+            if (aMin > bMin)
                 return 1;
-            if (a.Min() == b.Min())
+            if (aMin == bMin)
                 return 0;
             return -1;
         }
