@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    public static class FindingTheRoot
+    public static class NewtonMethod
     {
-        public static double NewtonMethod(double number, int exponent, double correctness)
+        public static double FindingTheRoot(double number, int exponent, double correctness)
         {
             if (number < 0 && exponent % 2 == 0)
             {

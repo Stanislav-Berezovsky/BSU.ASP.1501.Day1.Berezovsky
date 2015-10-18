@@ -15,7 +15,7 @@ namespace ForTask1
             double number = 256;
             int exponent = 4;
             double correctness = 0.0001;
-            var result = FindingTheRoot.NewtonMethod(number, exponent, correctness);
+            var result = NewtonMethod.FindingTheRoot(number, exponent, correctness);
             Console.WriteLine("NewtonMethod:{0}", result);
             double resultPow = Math.Pow(number, 1 / exponent);
             Console.WriteLine("Math.Pow:{0}", resultPow);
